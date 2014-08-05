@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*///////////*/
+/*Page Header*/
+/*///////////*/
+
+.header-chambre {
+    position: fixed;
+    overflow: visible;
+    background-color: rgba(28, 28, 28, 0.9);
+    top: 0px;
+    width: 100%;
+    z-index: 999999;
+    height: 70px;
+}
+.header-elements {
+    float: left;
+    margin-right: 20px;
+}
+
+/*//////////*/
+/*Navigation*/
+/*//////////*/
+
+.navigation-chambre {
+    float: right;
+    margin-right: 10px;
+}
+.active-navigation-item {
+    color: #e34e47!important;
+    -o-transition: color 500ms ease-out;
+    -ms-transition: color 500ms ease-out;
+    -moz-transition: color 500ms ease-out;
+    -webkit-transition: color 500ms ease-out;
+    transition: color 500ms ease-out;
+}
+.navigation-chambre a {
+    height: 100%;
+    display: inline;
+    padding: 0px 15px 0px 15px;
+    font-size: 13px;
+    line-height: 70px;
+    color: #FFFFFF;
+    -o-transition: color 500ms ease-out;
+    -ms-transition: color 500ms ease-out;
+    -moz-transition: color 500ms ease-out;
+    -webkit-transition: color 500ms ease-out;
+    transition: color 500ms ease-out;
+}
+.navigation-chambre a {
+    border-right: solid 1px rgba(255, 255, 255, 0.2);
+}
+/*.navigation-chambre a i {
+display: none;
+}*/
+.navigation-chambre em {
+    font-style: normal;
+}
+@media (max-width: 960px) {
+
+}
+/*/////////////*/
+/*Page Settings*/
+/*/////////////*/
+
+.box-960 {
+    position: relative;
+    z-index: 99;
+}
+.box-p80 {
+    position: relative;
+    z-index: 99;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png">
+    <link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" 			media="screen and (max-device-width: 320px)" />  
+    <link rel="apple-touch-startup-image" href="images/splash/splash-screen%402x.png" 		media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+    <link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen%403x.png" />
+    <link rel="apple-touch-startup-image" sizes="1024x748" href="images/splash/splash-screen-ipad-landscape.png" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : landscape)" />
+    <link rel="apple-touch-startup-image" sizes="768x1004" href="images/splash/splash-screen-ipad-portrait.png" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait)" />
+    <link rel="apple-touch-startup-image" sizes="1536x2008" href="images/splash/splash-screen-ipad-portrait-retina.png"   media="(device-width: 768px)	and (orientation: portrait)	and (-webkit-device-pixel-ratio: 2)"/>
+    <link rel="apple-touch-startup-image" sizes="1496x2048" href="images/splash/splash-screen-ipad-landscape-retina.png"   media="(device-width: 768px)	and (orientation: landscape)	and (-webkit-device-pixel-ratio: 2)"/>
+
+    <title>Epsilon Mobile Framework - Version 2.0</title>
+
+    <link href="styles/style.css"     		rel="stylesheet" type="text/css">
+    <link href="styles/framework.css" 		rel="stylesheet" type="text/css">
+    <link href="styles/owl.carousel.css" 	 rel="stylesheet" type="text/css">
+    <link href="styles/owl.theme.css" 		rel="stylesheet" type="text/css">
+    <link href="styles/swipebox.css"		 rel="stylesheet" type="text/css">
+    <link href="styles/colorbox.css"		 rel="stylesheet" type="text/css">
+    <link href="styles/parralax-nav.css"		 rel="stylesheet" type="text/css">
+    <link href="styles/animate.css"		 rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="styles/font-awesome.css">
+
+    <script type="text/javascript" src="scripts/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="scripts/jqueryui.js"></script>
+    <script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.swipebox.js"></script>
+    <script type="text/javascript" src="scripts/colorbox.js"></script>
+    <script type="text/javascript" src="scripts/snap.js"></script>
+    <script type="text/javascript" src="scripts/contact.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+    <script type="text/javascript" src="scripts/framework.js"></script>
+    <script type="text/javascript" src="scripts/framework.launcher.js"></script>
+    <script	type="text/javascript" src="scripts/j.scrollit.js"></script>
+    <script	type="text/javascript" src="scripts/j.wow.js"></script>
+    <script	type="text/javascript" src="scripts/j.lazyload.min.js"></script>
+
+    <script>
+     
+        function adpaterALaTailleDeLaFenetre(){
+            var largeur = document.documentElement.clientWidth,
+                hauteur = document.documentElement.clientHeight;
+
+
+            var zen = document.getElementById('zen'); // récupère l'id source
+            zen.style.height = (hauteur*1.10)+'px'; // applique la hauteur de la page
+            zen.style.width = largeur+'px'; // la largeur
+
+            var namaste = document.getElementById('namaste'); // récupère l'id source
+            namaste.style.height = (hauteur*1.10)+'px'; // applique la hauteur de la page
+            namaste.style.width = largeur+'px'; // la largeur
+
+            var jaipur = document.getElementById('jaipur'); // récupère l'id source
+            jaipur.style.height = (hauteur*1.10)+'px'; // applique la hauteur de la page
+            jaipur.style.width = largeur+'px'; // la largeur
+            
+            var prez = document.getElementById('prez'); // récupère l'id source
+            prez.style.height = (hauteur*1.10)+'px'; // applique la hauteur de la page
+            prez.style.width = largeur+'px'; // la largeur
+        }
+
+        // Une fonction de compatibilité pour gérer les évènements
+        function addEvent(element, type, listener){
+            if(element.addEventListener){
+                element.addEventListener(type, listener, false);
+            }else if(element.attachEvent){
+                element.attachEvent("on"+type, listener);
+            }
+        }
+
+        // On exécute la fonction une première fois au chargement de la page
+        addEvent(window, "load", adpaterALaTailleDeLaFenetre);
+        // Puis à chaque fois que la fenêtre est redimensionnée
+        addEvent(window, "resize", adpaterALaTailleDeLaFenetre);
+        
+        var wow = new WOW(
+            {
+                boxClass:     'anime',      // animated element css class (default is wow)
+                animateClass: 'animated', // animation css class (default is animated)
+                offset:       0          // distance to the element when triggering the animation (default is 0)
+            }
+        );
+        wow.init();
+
+    </script>
+    <style>
+        .go-up {
+            background-color: rgba(150, 150, 150, 0.5);
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            width: 40px;
+        }
+        .go-up:hover {
+        background-color: rgba(100, 100, 100, 0.9);
+        transition: all 500ms ease 0s;
+    }
+    </style>
+</head>
+<body>
+
+    <div id="preloader">
+        <div id="status">
+            <p class="center-text">
+                Chargement de la Page...
+                <em>Le chargement depends de la vitesse de votre connection!</em>
+            </p>
+        </div>
+    </div> 
+    <div class="header-chambre">
+        <div class="box-960">
+            <div class="header-elements">
+                <img src="images/misc/logo.png" class="page-logo" alt="img">
+                <a href="#" class="deploy-navigation"></a>
+            </div>
+            <div class="navigation-chambre">
+                <a href="homepage.html"><i></i><em>Accueil</em></a>
+                <a data-scroll-nav="1" href="#"><i></i><em>Zen</em></a>
+                <a data-scroll-nav="2" href="#"><i></i><em>Namaste</em></a>
+                <a data-scroll-nav="3" href="#"><i></i><em>Jaipur</em></a>
+                <a data-scroll-goto="0" href="#" class="go-up"><i class="fa fa-angle-up"></i><em></em></a>
+            </div>
+        </div>
+    </div>      
+    <div class="page-header-clear"></div>
+
+
+    <!-- La slide 1 -->  
+    <div id="prez" data-scroll-index="0" >  
+        <div class="center-text margin-top-50">
+            <span>Découvrez nos chambres d'hôtes avec jacuzzi privé<br/>
+                Les horaires de location sont de 18h00 à 19h30 jusqu' à 11h00 le lendemain.<br/><br/>
+                `</span>
+        </div>
+        <div class="center-text anime slideInRight delay-200"> 
+            <span>Les locations en journée ou pour quelques heures sont strictement refusées.<br/>
+                Notre organisation ne nous permet pas de faire "visiter" les chambres.<br/><br/></span>
+        </div>
+
+        <div class="center-text anime slideInDown delay-200">
+            <span>Soyons Zen ! <br/>
+                A la Bastide, le séjour rime avec détente, pas de réveil, pas de pression, pas de précipitation,<br/>
+                le petit déjeuner est servi entre 9h et 10h30, les personnes se levant très tôt<br/> pour des raisons personnelles ou professionnelles doivent en tenir compte.
+            </span>
+        </div>
+
+    </div>
+
+
+
+    <div id="zen" data-scroll-index="1" class="content-center center-text anime fadeIn padding-top-1">
+        <div class="center-text anime fadeIn margin-top-50 delay-300">
+            <h1>Découvrez la chambre avec jacuzzi zen.</h1>
+            <br/>
+
+            Une déclaration d'amour ou encore une demande en mariage?<br/>
+            Venez déclarer votre flamme à la Bastide le temps de secrets<br/> avec sa chambre d'hôtes Zen et son jacuzzi privé.
+        </div>
+
+        <ul class="gallery-chambre">
+            <li>
+                <a href="images/chambre-zen/chambre-zen-01.jpg" title="Une chambre unique pour un moment unique..." rel="chambre-zen" class="swipebox"><img src="images/chambre-zen/thumbs/chambre-zen-01.jpg" alt=""></a></li>
+            <li><a href="images/chambre-zen/chambre-zen-02.jpg" title="Lit en Bambou de Madagascar" rel="chambre-zen" class="swipebox" style="display:none"><img src="images/chambre-zen/thumbs/chambre-zen-02.jpg" alt=""></a></li>
+            <li><a href="images/chambre-zen/chambre-zen-03.jpg" title="reconnaîtriez-vous les constellations? voici le ciel étoilé, juste au dessus de vous 2 entre tendresse et romantisme...et ce n'est pas tout..." rel="chambre-zen" class="swipebox" style="display:none"><img src="images/chambre-zen/thumbs/chambre-zen-03.jpg" alt=""></a></li>
+            <li><a href="images/chambre-zen/chambre-zen-04.jpg" title="que diriez vous d'une cheminée bio-éthanol face à votre lit, qui...comme par magie...invite aux temps des secrets..." rel="chambre-zen" class="swipebox" style="display:none"><img src="images/chambre-zen/thumbs/chambre-zen-04.jpg" alt=""></a></li>
+            <li><a href="images/chambre-zen/chambre-zen-05.jpg" title="Literie Futon, draps en satin..." rel="chambre-zen" class="swipebox" style="display:none"><img src="images/chambre-zen/thumbs/chambre-zen-05.jpg" alt=""></a></li>
+            <li><a href="images/chambre-zen/chambre-zen-06.jpg" title="des tons reposants, la lueur des bougies..." rel="chambre-zen" class="swipebox" style="display:none"><img src="images/chambre-zen/thumbs/chambre-zen-06.jpg" alt=""></a></li>
+            <li><a href="images/chambre-zen/chambre-zen-07.jpg" title="d'un seul pas, vous entrez dans votre véranda, un espace intime pour dîner ou prendre votre petit déjeuner face aux Collines..." rel="chambre-zen" class="swipebox" style="display:none"><img src="images/chambre-zen/thumbs/chambre-zen-07.jpg" alt=""></a></li>
+            <li><a href="images/chambre-zen/chambre-zen-08.jpg" title="un détour du regard, voici votre véritable jacuzzi privatif et à accès illimité...de couleur noir marbré..." rel="chambre-zen" class="swipebox" style="display:none"><img src="images/chambre-zen/thumbs/chambre-zen-08.jpg" alt=""></a></li>
+            <li><a href="images/chambre-zen/chambre-zen-09.jpg" title="il est équipé de la chromathérapie et  d'une ligne d'eau illuminée..." rel="chambre-zen" class="swipebox" style="display:none"><img src="images/chambre-zen/thumbs/chambre-zen-09.jpg" alt=""></a></li>
+            <li><a href="images/chambre-zen/chambre-zen-10.jpg" title="3 places ergonomiques, jets d'eau et d'air, vannes de répartition et cascade..." rel="chambre-zen" class="swipebox" style="display:none"><img src="images/chambre-zen/thumbs/chambre-zen-10.jpg" alt=""></a></li>
+            <li><a href="images/chambre-zen/chambre-zen-11.jpg" title="Prêt de peignoirs et linge de bain..." rel="chambre-zen" class="swipebox" style="display:none"><img src="images/chambre-zen/thumbs/chambre-zen-11.jpg" alt=""></a></li>
+            <li><a href="images/chambre-zen/chambre-zen-12.jpg" title="les masques de relaxation et l'aromathérapie diffusée lors du mode 'bain bouillonnant' vous transporterons hors du temps..." rel="chambre-zen" class="swipebox" style="display:none"><img src="images/chambre-zen/thumbs/chambre-zen-12.jpg" alt=""></a></li>
+            <li><a href="images/chambre-zen/chambre-zen-13.jpg" title="votre salle de bains privative est équipée d'un lavabo en pierre brute, d'un w.c, d'un sèche-serviettes..." rel="chambre-zen" class="swipebox" style="display:none"><img src="images/chambre-zen/thumbs/chambre-zen-13.jpg" alt=""></a></li>
+            <li><a href="images/chambre-zen/chambre-zen-14.jpg" title="et d'une douche à l'italienne, colonne hydromassante en teck..." rel="chambre-zen" class="swipebox" style="display:none"><img src="images/chambre-zen/thumbs/chambre-zen-14.jpg" alt=""></a></li>
+            <li><a href="images/chambre-zen/chambre-zen-15.jpg" title="toujours dans l'ambiance zen-bambous...Allons visiter la chambre Namasté" rel="chambre-zen" class="swipebox" style="display:none"><img src="images/chambre-zen/thumbs/chambre-zen-15.jpg" alt=""></a></li>
+        </ul>
+    </div> <!-- /.slide_inside-->         
+    <!-- /#slide1 -->  
+
+    <!-- La slide 2 -->  
+    <div  id="namaste" data-scroll-index="2" class="">  
+        <div class="content-chambre margin-top-300">  
+            <ul class="gallery-chambre anime slideInLeft">
+                <li><a href="images/chambre-namaste/chambre-namaste-01.jpg" title='Namasté : "Bienvenue"' rel="chambre-namaste" class="swipebox"><img src="images/chambre-namaste/thumbs/chambre-namaste-01.jpg" alt=""></a></li>
+                <li><a href="images/chambre-namaste/chambre-namaste-02.jpg" title="Laissez-vous charmer par cette ambiance nature et zen" rel="chambre-namaste" class="swipebox" style="display:none"><img src="images/chambre-namaste/thumbs/chambre-namaste-02.jpg" alt=""></a></li>
+                <li><a href="images/chambre-namaste/chambre-namaste-03.jpg" title="Un miroir secret reflète le lit à baldaquin pour ajouter un soupçon de glamour..." rel="chambre-namaste" class="swipebox" style="display:none"><img src="images/chambre-namaste/thumbs/chambre-namaste-03.jpg" alt=""></a></li>
+                <li><a href="images/chambre-namaste/chambre-namaste-04.jpg" title="Les tons sont reposants..." rel="chambre-namaste" class="swipebox" style="display:none"><img src="images/chambre-namaste/thumbs/chambre-namaste-04.jpg" alt=""></a></li>
+                <li><a href="images/chambre-namaste/chambre-namaste-05.jpg" title="Comme au coeur d'un jardin japonais" rel="chambre-namaste" class="swipebox" style="display:none"><img src="images/chambre-namaste/thumbs/chambre-namaste-05.jpg" alt=""></a></li>
+                <li><a href="images/chambre-namaste/chambre-namaste-06.jpg" title="Une ambiance parfaite pour les amoureux..." rel="chambre-namaste" class="swipebox" style="display:none"><img src="images/chambre-namaste/thumbs/chambre-namaste-06.jpg" alt=""></a></li>
+                <li><a href="images/chambre-namaste/chambre-namaste-07.jpg" title="Les lumières sont douces..." rel="chambre-namaste" class="swipebox" style="display:none"><img src="images/chambre-namaste/thumbs/chambre-namaste-07.jpg" alt=""></a></li>
+                <li><a href="images/chambre-namaste/chambre-namaste-08.jpg" title="et intimes..." rel="chambre-namaste" class="swipebox" style="display:none"><img src="images/chambre-namaste/thumbs/chambre-namaste-08.jpg" alt=""></a></li>
+                <li><a href="images/chambre-namaste/chambre-namaste-09.jpg" title="La vue de la véranda sur les collines de Provence..." rel="chambre-namaste" class="swipebox" style="display:none"><img src="images/chambre-namaste/thumbs/chambre-namaste-09.jpg" alt=""></a></li>
+                <li><a href="images/chambre-namaste/chambre-namaste-10.jpg" title="Le jacuzzi haut de gamme est très spacieux avec ses 3 places ergonomiques et ses massages relaxants" rel="chambre-namaste" class="swipebox" style="display:none"><img src="images/chambre-namaste/thumbs/chambre-namaste-10.jpg" alt=""></a></li>
+                <li><a href="images/chambre-namaste/chambre-namaste-11.jpg" title="La nuit venue il s'illuminera pour vous faire rêver" rel="chambre-namaste" class="swipebox" style="display:none"><img src="images/chambre-namaste/thumbs/chambre-namaste-11.jpg" alt=""></a></li>
+                <li><a href="images/chambre-namaste/chambre-namaste-12.jpg" title="Le seul inconvénient : ne plus vouloir le quitter..." rel="chambre-namaste" class="swipebox" style="display:none"><img src="images/chambre-namaste/thumbs/chambre-namaste-12.jpg" alt=""></a></li>
+                <li><a href="images/chambre-namaste/chambre-namaste-13.jpg" title="couloir d’accès chambre/salle de bain" rel="chambre-namaste" class="swipebox" style="display:none"><img src="images/chambre-namaste/thumbs/chambre-namaste-13.jpg" alt=""></a></li>
+                <li><a href="images/chambre-namaste/chambre-namaste-14.jpg" title="La salle de bains-wc est indépendante mais privative" rel="chambre-namaste" class="swipebox" style="display:none"><img src="images/chambre-namaste/thumbs/chambre-namaste-14.jpg" alt=""></a></li>
+                <li><a href="images/chambre-namaste/chambre-namaste-15.jpg" title="Et la seule à être équipée d'une cabine hydromassante et pluie tropicale..." rel="chambre-namaste" class="swipebox" style="display:none"><img src="images/chambre-namaste/thumbs/chambre-namaste-15.jpg" alt=""></a></li>
+                <li><a href="images/chambre-namaste/chambre-namaste-16.jpg" title="Voici un aperçu de la chambre Namasté décorée avec l'option SWEET LOVE, finissons par un petit tour dans la chambre Jaïpur" rel="chambre-namaste" class="swipebox" style="display:none"><img src="images/chambre-namaste/thumbs/chambre-namaste-16.jpg" alt=""></a></li>
+            </ul>
+        </div> <!-- /.slide_inside-->             
+    </div> <!-- /#slide2 -->  
+
+    <!-- La slide 3 -->  
+    <div  id="jaipur" data-scroll-index="3" class="">  
+        <div class="content delay-1000 anime slideInDown">              
+            <p class="center-text margin-top-50">
+                <span>Découvrez nos chambres d'hôtes avec jacuzzi privé<br/>
+                    Les horaires de location sont de 18h00 à 19h30 jusqu' à 11h00 le lendemain.<br/><br/></span>
+
+                <span>Les locations en journée ou pour quelques heures sont strictement refusées.<br/>
+                    Notre organisation ne nous permet pas de faire "visiter" les chambres.<br/><br/></span>
+
+                <span class="">Soyons Zen ! <br/>
+                    A la Bastide, le séjour rime avec détente, pas de réveil, pas de pression, pas de précipitation,<br/>
+                    le petit déjeuner est servi entre 9h et 10h30, les personnes se levant très tôt<br/> pour des raisons personnelles ou professionnelles doivent en tenir compte.</span>
+            </p>
+        </div> <!-- /.slide_inside-->         
+    </div> <!--  /#slide3 -->  
+    
+</body>
+</html>
