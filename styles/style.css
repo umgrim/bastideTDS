@@ -794,10 +794,10 @@ and (orientation : landscape){
 
 .header{
 	background-color:#1c1c1c;
-	height:60px;
+	height:80px;
 	position:fixed;
 	width:100%;
-    margin-top: 20px;
+    padding-top: 20px;
 	z-index:9999999;
     top:0; 
         
